@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice Maker Pro</title>
+  <meta name="description" content="Invoice Maker Pro — create professional invoices in minutes, manage clients and items, save payment details, add your logo, and export beautiful PDFs with templates." />
+  <meta name="apple-itunes-app" content="app-clip-bundle-id=, app-id=" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Cpath d='M18 14h28a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4zm6 10h20M24 30h20M24 38h14' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bg:#0b0b0c;--card:#121214;--muted:#9aa0a6;--text:#f5f6f7;
+      --brand:#4f7cff;--brand-2:#7c3aed;--radius:14px;--max:1160px
+    }
+    *{box-sizing:border-box} html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
+    a{color:#9ab4ff;text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:color-mix(in oklab, var(--bg), transparent 35%);border-bottom:1px solid #1d1f23;z-index:8}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .row{display:flex;gap:18px;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:10px;align-items:center;font-weight:700}
+    .logo .badge{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+    nav a{padding:10px 12px;border-radius:10px;color:var(--text)}
+    nav a.active{background:#1a1d22}
+    .hero{padding:72px 0 40px}
+    .hero .lead{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:8px 0 14px}
+    .hero p{color:var(--muted);max-width:720px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #2a2d34;background:#181b20;color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none}
+    .grid{display:grid;gap:18px}
+    @media (min-width:880px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--card);border:1px solid #1e2126;padding:18px;border-radius:var(--radius)}
+    .card h3{margin:6px 0 8px}
+    .muted{color:var(--muted)}
+    section{scroll-margin-top:84px;padding:40px 0}
+    .eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:12px}
+    h2{font-size:clamp(22px,3.4vw,32px);margin:0 0 8px}
+    .price{font-size:38px;font-weight:800}
+    .kicker{font-size:12px;color:var(--muted)}
+    footer{border-top:1px solid #1d1f23;padding:30px 0 40px;margin-top:40px}
+    .links{display:flex;flex-wrap:wrap;gap:10px}
+    .notice{font-size:12px;color:#cbd5e1;background:#111317;border:1px solid #23262c;padding:10px 12px;border-radius:10px;margin-top:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap row" style="height:64px">
+      <div class="row" style="gap:16px">
+        <a class="logo" href="index.html">
+          <span class="badge">🧾</span>
+          <span>Invoice Maker Pro</span>
+        </a>
+        <nav class="row">
+          <a href="#features" class="active">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="privacy.html" id="nav-privacy">Privacy</a>
+          <a href="terms.html" id="nav-terms">Terms</a>
+        </nav>
+      </div>
+      <div class="row">
+        <a class="btn primary" href="#" aria-label="App Store link">Download on the App Store</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">Create. Send. Get Paid.</span>
+      <h1 class="lead">Professional invoices in minutes.</h1>
+      <p>Invoice Maker Pro helps freelancers and small businesses create beautiful PDFs, manage clients and items, save payment details (bank, PayPal, or crypto with memo), add your logo, and share invoices instantly — all on iPhone and iPad.</p>
+      <div class="cta">
+        <a class="btn primary" href="#" aria-label="App Store link">Get the app</a>
+        <a class="btn" href="#features">Learn more</a>
+      </div>
+      <div class="notice">No third-party ads. Pro features are billed via Apple In-App Purchase. We do not process payments outside Apple.</div>
+    </section>
+
+    <section id="features" class="wrap">
+      <h2>Everything you need to bill smarter</h2>
+      <p class="muted">Powerful tools packed in a clean, mobile-first experience.</p>
+      <div class="grid cols-3" style="margin-top:16px">
+        <div class="card"><h3>Invoice Wizard</h3><p class="muted">Step-by-step flow: company & client info, items & pricing, choose a template, instant PDF.</p></div>
+        <div class="card"><h3>Saved Payment Details</h3><p class="muted">Store bank, PayPal, or crypto (coin + network + memo/tag) and include them on invoices with one tap.</p></div>
+        <div class="card"><h3>Beautiful Templates</h3><p class="muted">Modern, Minimal, and Classic styles with your logo and brand accents.</p></div>
+        <div class="card"><h3>Items & Catalog</h3><p class="muted">Save products/services, set rates, and add them to invoices fast.</p></div>
+        <div class="card"><h3>Multi-Currency</h3><p class="muted">Work in your local currency — amounts are formatted automatically.</p></div>
+        <div class="card"><h3>Privacy-First</h3><p class="muted">No ads. Apple IAP only. You control your data.</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="wrap">
+      <h2>Simple pricing</h2>
+      <p class="muted">Start free. Go Pro for advanced templates and unlimited invoices.</p>
+      <div class="grid cols-2" style="margin-top:16px">
+        <div class="card">
+          <h3>Free</h3>
+          <p class="muted">Essentials to get started</p>
+          <div class="price">$0</div>
+          <ul class="muted">
+            <li>Invoice wizard</li>
+            <li>Standard template</li>
+            <li>Client & items manager</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Pro</h3>
+          <p class="muted">For growing businesses</p>
+          <div class="price">$4.99/mo</div>
+          <div class="kicker muted">Billed via Apple In-App Purchase. Cancel anytime in App Store settings.</div>
+          <ul class="muted">
+            <li>All Free features</li>
+            <li>All premium templates</li>
+            <li>Saved payment presets & logo</li>
+            <li>Unlimited invoices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="wrap">
+      <h2>FAQ</h2>
+      <div class="grid cols-2" style="margin-top:8px">
+        <div class="card"><h3>How do I share a PDF?</h3><p class="muted">After saving, tap Share to export the invoice as a PDF and send it via Mail, Messages, or Files.</p></div>
+        <div class="card"><h3>Do you show ads?</h3><p class="muted">No. We only promote the Pro subscription. There is no third-party advertising SDK.</p></div>
+        <div class="card"><h3>How does Pro billing work?</h3><p class="muted">Pro is an auto-renewing subscription managed by Apple. You can cancel in your App Store settings.</p></div>
+        <div class="card"><h3>Is my data private?</h3><p class="muted">Yes. We collect only what’s necessary to operate the app. See our <a href="privacy.html">Privacy Policy</a>.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:dd925648@gmail.com">dd925648@gmail.com</a></p>
+      <p class="muted">Legal entity: SimHaDo For Business, Kentucky 40214, USA</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap row">
+      <div class="muted">© <span id="yy"></span> SimHaDo For Business. All rights reserved.</div>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yy').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
